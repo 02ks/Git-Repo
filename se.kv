@@ -1,0 +1,15 @@
+<Button>:
+    font_size:40
+    color:0.4, 0.1, 0.9, 1
+    size_hint: 0.3, 0.9
+
+<FloatLayout>:
+    Button:
+        pos_hint: {"x":0.5 }
+        text: "Communism with"
+
+    Button:
+        id: btn
+        pos_hint: {"y":0.3}
+        text: "Tim" if btn.state == "normal" else "Alex"
+        background_color: 0.99, 0.5, 0.9, 1
